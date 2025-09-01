@@ -1,0 +1,118 @@
+.reporte-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-industrial-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow-main);
+  color: var(--color-industrial-dark);
+}
+
+.reporte-title {
+  text-align: center;
+  color: var(--color-industrial-dark);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--color-industrial-gray);
+  padding-bottom: 1rem;
+}
+
+.reporte-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-industrial-dark);
+}
+
+.form-input, .form-button {
+  width: 100%;
+}
+
+.reporte-resultado {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-main);
+  border: 1px solid var(--color-industrial-gray);
+}
+
+.reporte-resultado h2 {
+  color: var(--color-accent-acpi);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-industrial-gray);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.reporte-resultado h3 {
+  color: var(--color-industrial-dark);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.reporte-resultado p {
+  margin: 0.5rem 0;
+  color: var(--color-industrial-dark);
+}
+
+.asistencia-detalle {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.detalle-item {
+  background-color: var(--color-industrial-light);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-industrial-gray);
+  transition: all 0.3s ease;
+}
+
+.detalle-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.detalle-item p {
+  margin: 0.5rem 0;
+  color: var(--color-industrial-dark);
+}
+
+.justificacion-texto {
+  font-style: italic;
+  color: var(--color-accent-mmo);
+  margin-top: 0.5rem;
+  border-left: 2px solid var(--color-accent-mmo);
+  padding-left: 10px;
+}
+
+@media (min-width: 600px) {
+  .reporte-form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .form-group {
+    flex: 1;
+    margin-right: 1rem;
+  }
+}

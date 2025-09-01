@@ -1,0 +1,11 @@
+/* Estilos base para resetear el navegador */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Restablece los estilos predeterminados de la mayoría de los elementos */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
